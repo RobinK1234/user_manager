@@ -1,5 +1,5 @@
 import logo from './logo.svg';
-import React, {useState} from "react";
+import React, {useState, Fragment} from "react";
 import './App.css';
 import AddUser from "./components/users/AddUser.js"
 import UsersList from "./components/users/UserList";
@@ -23,10 +23,10 @@ function App() {
         }
 
   return (
-   <div>
+   <Fragment>
      <AddUser onAddUser={onAddUserHandler}/>
        <UsersList users={users}/>
-    </div>
+    </Fragment>
   );
 }
 
